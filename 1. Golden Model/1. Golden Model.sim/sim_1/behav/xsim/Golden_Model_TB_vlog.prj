@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../1. Golden Model.srcs/sources_1/new/SRAM.sv" \
+"../../../../1. Golden Model.srcs/sources_1/new/seq_core.sv" \
+"../../../../1. Golden Model.srcs/sim_1/new/Golden_Model_TB.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

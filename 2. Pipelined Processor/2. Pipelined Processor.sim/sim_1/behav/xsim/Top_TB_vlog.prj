@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../2. Pipelined Processor.srcs/sources_1/new/Data_Memory.sv" \
+"../../../../2. Pipelined Processor.srcs/sources_1/new/EXECUTE.sv" \
+"../../../../2. Pipelined Processor.srcs/sources_1/new/EXECUTE_Pipeline.sv" \
+"../../../../2. Pipelined Processor.srcs/sources_1/new/FETCH.sv" \
+"../../../../2. Pipelined Processor.srcs/sources_1/new/IR.sv" \
+"../../../../2. Pipelined Processor.srcs/sources_1/new/Processor.sv" \
+"../../../../2. Pipelined Processor.srcs/sources_1/new/Program_Memory.sv" \
+"../../../../2. Pipelined Processor.srcs/sources_1/new/READ.sv" \
+"../../../../2. Pipelined Processor.srcs/sources_1/new/READ_Pipeline.sv" \
+"../../../../2. Pipelined Processor.srcs/sources_1/new/REGS.sv" \
+"../../../../2. Pipelined Processor.srcs/sources_1/new/Top.sv" \
+"../../../../2. Pipelined Processor.srcs/sources_1/new/WRITE_BACK.sv" \
+"../../../../2. Pipelined Processor.srcs/sim_1/new/Top_TB.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
