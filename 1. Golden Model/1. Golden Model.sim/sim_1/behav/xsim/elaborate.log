@@ -6,4 +6,13 @@ Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/Florin/Desktop/DSD 1/1. Golden Model/1. Golden Model.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Florin/Desktop/DSD 1/1. Golden Model/1. Golden Model.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seq_core
+Compiling module xil_defaultlib.SRAM
+Compiling module xil_defaultlib.Golden_Model_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Golden_Model_TB_behav

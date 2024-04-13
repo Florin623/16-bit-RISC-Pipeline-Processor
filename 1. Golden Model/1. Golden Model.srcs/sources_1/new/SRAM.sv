@@ -10,7 +10,7 @@ module SRAM(
 
     reg [`D_SIZE-1 : 0] memory [0 : 2**`A_SIZE - 1];
 
-    always_comb begin
+    always_latch begin
         if (read)
             data_out <= memory[address];
         else if (write)

@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2023.1.1 (64-bit)
+# SW Build 3900603 on Fri Jun 16 19:31:24 MDT 2023
+# IP Build 3900379 on Sat Jun 17 05:28:05 MDT 2023
+# SharedData Build 3899622 on Fri Jun 16 03:34:24 MDT 2023
+# Start of session at: Sat Apr 13 16:17:33 2024
+# Process ID: 4048
+# Current directory: C:/Users/Florin/Desktop/DSD 1/1. Golden Model
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2708 C:\Users\Florin\Desktop\DSD 1\1. Golden Model\1. Golden Model.xpr
+# Log file: C:/Users/Florin/Desktop/DSD 1/1. Golden Model/vivado.log
+# Journal file: C:/Users/Florin/Desktop/DSD 1/1. Golden Model\vivado.jou
+# Running On: DESKTOP-7P0D6RH, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 10, Host memory: 16836 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Florin/Desktop/DSD 1/1. Golden Model/1. Golden Model.xpr}
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top SRAM [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+refresh_design
+close_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top seq_core [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source Golden_Model_TB.tcl
+current_wave_config {Untitled 1}
+add_wave {{/Golden_Model_TB/seq_core_DUT/pc}} {{/Golden_Model_TB/seq_core_DUT/instruction}} {{/Golden_Model_TB/seq_core_DUT/read}} {{/Golden_Model_TB/seq_core_DUT/write}} {{/Golden_Model_TB/seq_core_DUT/address}} {{/Golden_Model_TB/seq_core_DUT/data_in}} {{/Golden_Model_TB/seq_core_DUT/data_out}} {{/Golden_Model_TB/seq_core_DUT/R}} 
+current_wave_config {Untitled 1}
+add_wave {{/Golden_Model_TB/SRAM_DUT/read}} {{/Golden_Model_TB/SRAM_DUT/write}} {{/Golden_Model_TB/SRAM_DUT/address}} {{/Golden_Model_TB/SRAM_DUT/data_in}} {{/Golden_Model_TB/SRAM_DUT/data_out}} {{/Golden_Model_TB/SRAM_DUT/memory}} 
+restart
+run all
+save_wave_config {C:/Users/Florin/Desktop/DSD 1/1. Golden Model/Golden_Model_TB_behav.wcfg}
+close_sim
